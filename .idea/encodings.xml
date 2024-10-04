@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/First_demo1/.poem.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/First_demo1/first.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/easy_try_demo/data.csv" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/八月十三/file_replace_old.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/八月十六/file_new" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/八月十六/file_replace.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/八月十六/secret.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/八月十六/关关雎鸠.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/校园管理系统/课程类.py" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

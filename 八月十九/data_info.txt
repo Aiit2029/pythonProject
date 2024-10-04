@@ -1,0 +1,3 @@
+{'name': 'apex', 'age': '18', 'phone': '123', 'id_num': '123', 'select_course': 'Python'}
+{'name': 'alex', 'age': '25', 'phone': '456', 'id_num': '456', 'select_course': 'Python'}
+{'name': 'apex', 'age': '18', 'phone': '1043521889', 'id_num': '341622200202276811', 'select_course': 'Python'}
