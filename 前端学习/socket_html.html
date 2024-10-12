@@ -3,12 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>抬头</title>
+
+    <meta http-equiv="x-ua-compatible" content="IE = edge">
+<!--    <meta http-equiv="refresh" content="2;">-->
+<!--    <meta http-equiv="content-type" charset="UTF-8">-->
 </head>
 <body>
-<h1>Welcome to the legal of dream</h1>
-<ol>数学
-英语
-化学
-</ol>
+
+<!--<b>blod加粗</b>-->
+<!--<i>italic斜体</i>-->
+<!--<u>underline下划线</u>-->
+<!--<s>strike删除线</s>-->
+<!--<br>&lt;!&ndash; 换行&ndash;&gt;-->
+<!--&lt;!&ndash;<hr>  分割线&ndash;&gt;-->
+<!--<hr>-->
+<button id="refreshButton">刷新面</button>
+<!--<button><a href="https://github.com/Aiit2029/pythonProject" target = '_blank'>我的github网址(新开页面)</a></button>-->
+<!--<button><a href="https://github.com/Aiit2029/pythonProject" target = '_self'>我的github网址(本页面)</a></button>-->
+<!--<h1>Welcome to the legal of dream</h1>-->
+<!--<ol type = 'a' start="2">-->
+<!--    <li>start后面只跟数字，数字代表着顺序</li>-->
+<!--    <li>A</li>-->
+<!--    <li>i</li>-->
+<!--    <li>I</li>-->
+<!--    <li>数学</li>-->
+<!--    <li>英语</li>-->
+<!--    <li>化学</li>-->
+<!--</ol>-->
+<!--<span>只是一个字段</span>-->
+<!--<ul type="circle">-->
+<!--    <li>square</li>-->
+<!--    <li>disc</li>-->
+<!--    <li>数学</li>-->
+<!--    <li>英语</li>-->
+<!--    <li>化学</li>-->
+<!--</ul>-->
+<!--<dl>-->
+<!--    <dt>-->
+<!--        标题1-->
+<!--    </dt>-->
+<!--    <dd>内容1</dd>-->
+<!--</dl>-->
+<!--<table border="1">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>姓名</th>-->
+<!--        <th>年龄</th>-->
+<!--        <th>性别</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr>-->
+<!--        <td>刘政</td>-->
+<!--        <td>23</td>-->
+<!--        <td rowspan="2">男</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>刘欣悦</td>-->
+<!--        <td>14</td>-->
+
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+<br>
+<form action="http://127.0.0.1:9000" method="post">
+文本输入：<input type="text"/>
+<!--<p>新的按钮<input type="button" value="普通按钮"/></p>-->
+<div>
+    <p><input type="checkbox" checked="checked" name="hobby">读书</p>
+    <p><input type = 'checkbox' name="hobby">看报</p>
+    <p><input type = 'checkbox' name="hobby">van游戏</p>
+</div>
+    <p><input type="submit" value="提交"></p>
+</form>
+
 </body>
+ <script>
+        document.getElementById('refreshButton').addEventListener("click", function (){
+            location.reload();
+            // alert('您进行了刷新');
+        });
+    </script>
 </html>
