@@ -1,0 +1,80 @@
+/*在 css中 # 表示 id  # 后面的 内容  是id的名字*/
+/*例如*/
+#jinbuhuan {
+    background-color: aliceblue;
+}
+
+/*在 CSS中 . 表示 class 类  . 后面的内容 是类的名字*/
+
+.ul_list {
+    background-color: aqua;
+    color: deeppink;
+}
+/*tbale标签内的 td标签 才会被选择*/
+/*又叫 子子孙选择器*/
+table td {
+    color: aqua;
+}
+/*p标签内的第一级input才会被选择*/
+/*又叫 儿子选择器*/
+p>input {
+    color: antiquewhite;
+}
+
+/*选择 第一个标签 后面紧挨着 的 第二个标签 */
+/*毗邻选择器*/
+div + p {
+    background-color: aqua;
+}
+
+/*选择第一个标签 后的 所有同级标签  */
+/*又叫 弟弟选择器*/
+#yinbuhuan ~ p {
+    color: #00A65F;
+}
+
+/*选择自定义的属性名为qs的p标签 */
+p[qs] {
+    color: brown;
+}
+
+/*选择自定义的属性名为qs且命名为ns2的p标签 */
+p[qs='ns2'] {
+    color: deeppink;
+}
+
+/*分组设置样式*/
+/*同时将 div 和  p标签 同时设置颜色为 绿色*/
+/*div,p {*/
+/*    color: #00A65F;*/
+/*}*/
+
+/*嵌套设置样式*/
+/*将div模块中的 p标签 内的文字设置为绿色*/
+/*div p{*/
+/*    color: #00A65F;*/
+/*}*/
+
+/*伪类选择器*/
+/*刚开始没有动作时 显示的颜色为 黑色*/
+a:link {
+   color: deeppink;
+}
+/*已经访问以后的链接颜色*/
+a:visited {
+    color: black;
+}
+/*鼠标悬停在上面时 的颜色*/
+a:hover {
+    color: azure;
+}
+/*鼠标点下去还没抬起来时 的颜色*/
+a:active {
+    color: crimson;
+}
+
+input:focus {
+    outline: none;
+    background-color: aqua;
+}
+
