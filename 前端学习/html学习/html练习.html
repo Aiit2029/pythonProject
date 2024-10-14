@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DIV+CSS进行完整页面布局</title>
+    <style>
+      .container {
+            height: 200px;
+            background-color: violet;
+            position: relative;
+        }
+
+      .left-content {
+            margin-left: 5px;
+            float: left;
+        }
+
+      .right-content {
+            float: right;
+            background-color: #00A65F;
+            height: 200px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+       /*.button-row {*/
+       /*     display: flex;*/
+       /*     justify-content: flex-end;*/
+       /* }*/
+
+        button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-content">
+            <h1>博客首页</h1>
+            <br>
+            <p>本页面主要是用 DIV+CSS 布局实现的</p>
+        </div>
+        <div class="right-content">
+            <div class="button-row">
+                <button><a href="https://www.bilibili.com">首页</a></button>
+                <button>闲言碎语</button>
+                <button>我是谁</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

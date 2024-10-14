@@ -8,7 +8,7 @@ while 1:
     ret = conn.recv(1024)
     print(ret.decode('utf-8'))
     conn.send(b'HTTP/1.1 200 OK\r\n\r\n')
-    with open('socket_html.html',mode='rb') as f:
+    with open('socket_html.html', mode='rb') as f:
         data = f.read()
     conn.send(data)
 # conn.close()
