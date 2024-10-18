@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.net/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+<input id="input1">
+<div class="div1">
+    <button class="but1">点击即送屠龙宝刀</button>
+</div>
+
+
+
+
+<script>
+    $(document).ready(function (){
+        $('.div1').on('click','button',function (){
+            let btn = document.createElement("button");
+            $(btn).text('屠龙宝刀');
+            $(btn).addClass('.but1');
+            $('.div1').append(btn)
+
+        })
+    })
+
+
+
+    // $(document).ready(function (){
+    //     $('.button1').click(function (){
+    //     let x, text;
+    //     x = $('#input1').val();
+    //     if (isNaN(x)||x<1||x>10){
+    //         text = '输入错误';
+    //     }
+    //     else{
+    //         text = '输入正确';
+    //     }
+    //     $('#page1').html(text);
+    // });
+    // });
+
+</script>
+
+</body>
+</html>
