@@ -8,28 +8,32 @@ sk.listen(5)
 
 
 def html(conn):
-    with open('test.html','rb') as f:
+    with open('test.html', 'rb') as f:
         data = f.read()
     conn.send(data)
     conn.close()
 
 def css(conn):
-    with open('test.css','rb') as f:
+    with open('test.css', 'rb') as f:
         data = f.read()
     conn.send(data)
     conn.close()
 
 def js(conn):
-    with open('test.js','rb') as f:
+    with open('test.js', 'rb') as f:
         data = f.read()
     conn.send(data)
     conn.close()
 
 def ioc(conn):
-    with open('jd.ico','rb') as f:
+    with open('../day2/jd.ico', 'rb') as f:
         data = f.read()
     conn.send(data)
     conn.close()
+
+
+
+
 
 
 while True:

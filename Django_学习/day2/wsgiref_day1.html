@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="icon" href="jd.ico">
+    <link rel="stylesheet" href="wsgiref_day1.css">
 <!--    <link rel="icon" href="wechat.ico">-->
     <!--直接写在html页面里面的css样式是直接可以在浏览器上显示的-->
     <!--<style>-->
@@ -15,6 +16,16 @@
 </head>
 <body>
 
+<h1>{{userinfo}}</h1>
+
+<ul>
+    {% for k,v in userinfo.items() %}
+        <li>{{ k }}--{{v}}</li>
+    {% endfor %}
+
+</ul>
+
+
 <h1>姑娘，你好，我是Jaden</h1>
 <div id="TimeToNow">time</div>
 <!--直接写在html页面里面的img标签的src属性值如果是别人网站的地址（网络地址）是直接可以在浏览器上显示的-->
@@ -25,21 +36,23 @@
 <!--<script>-->
     <!--alert('这是我们第一个网页')-->
 <!--</script>-->
+<!--<script>-->
+<!--    $(document).ready(function () {-->
+<!--    function updateTime() {-->
+<!--        $.ajax({-->
+<!--            url: 'getTime.py', // 服务器端脚本，用于获取时间-->
+<!--            success: function (data) {-->
+<!--                $('#TimeToNow').html(data);-->
+<!--                console.log(data)-->
 
-<script src="test.js"></script>
-<script>
-    $(document).ready(function () {
-    function updateTime() {
-        $.ajax({
-            url: 'E:\\PythonProject\\pythonProject\\Django_学习\\first_p.php', // 服务器端脚本，用于获取时间
-            success: function (data) {
-                $('#TimeToNow').html(data);
-            }
-        });
-    }
-    setInterval(updateTime, 1000); // 每秒更新一次时间
-});
-</script>
+<!--            }-->
+<!--        });-->
+<!--    }-->
+<!--    setInterval(updateTime, 1000); // 每秒更新一次时间-->
+<!--});-->
+<!--</script>-->
+<script src="wsgiref_day1.js"></script>
+
 
 </body>
 </html>
