@@ -36,21 +36,21 @@
 <!--<script>-->
     <!--alert('这是我们第一个网页')-->
 <!--</script>-->
-<!--<script>-->
-<!--    $(document).ready(function () {-->
-<!--    function updateTime() {-->
-<!--        $.ajax({-->
-<!--            url: 'getTime.py', // 服务器端脚本，用于获取时间-->
-<!--            success: function (data) {-->
-<!--                $('#TimeToNow').html(data);-->
-<!--                console.log(data)-->
+<script>
+    $(document).ready(function () {
+    function updateTime() {
+        $.ajax({
+            url: 'getTime.py', // 服务器端脚本，用于获取时间
+            success: function (data) {
+                $('#TimeToNow').html(data);
+                console.log(data)
 
-<!--            }-->
-<!--        });-->
-<!--    }-->
-<!--    setInterval(updateTime, 1000); // 每秒更新一次时间-->
-<!--});-->
-<!--</script>-->
+            }
+        });
+    }
+    setInterval(updateTime, 1000); // 每秒更新一次时间
+});
+</script>
 <script src="wsgiref_day1.js"></script>
 
 
